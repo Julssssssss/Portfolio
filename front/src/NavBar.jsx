@@ -29,7 +29,7 @@ const NavBar = () => {
 </div>
 <div className='NavContain1'>
     <div className='circle'>
-
+      <p>hello</p>
     </div>
 </div>
 </div>
