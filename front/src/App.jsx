@@ -19,7 +19,7 @@ const App = () => {
     <div>
       <div>
         <NavBar/>
-        <h1>hello</h1>
+  
        
       </div>
       

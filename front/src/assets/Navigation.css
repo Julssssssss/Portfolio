@@ -23,31 +23,29 @@
    
 }
 /* top right bottom left padding */
-#NavButton {
-    transform: translatey(20px);
+
+/*hamburger icon*/
+#HamButton {
+    transform: translatey(15px);
     flex-shrink: 0;
     margin-left: 5px;
     border: 0px;
     background-color: transparent;
     display: flex;
     justify-content: center;
-    border-radius: 50%;
     
 }
-#NavButton> svg:hover{
-    background-color: azure;
+#HamButton> svg:hover{
+    
+    
 }
-#NavButton > svg{
+#HamButton > svg{
     height: 35px;
     width: 35px;
     background-color: transparent;
+    
 }
-
-
-
-
-
-
+/*for darkmode*/
 .circle{
     width: 40px;
     height: 40px;
@@ -57,6 +55,5 @@
     transform: translatey(15px);
     border-radius: 50%;
     background-color: black;
-    border: 2px solid black;
 
 }
