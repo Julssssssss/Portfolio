@@ -1,8 +1,17 @@
-.Container{
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding:0px;
+    margin:0px;
+}
+.Container1{
     display: flex;
     flex-direction: row;
 
 }
+/*left container*/
 .NavContain{
     height: 70px;
     width: 50%;
@@ -12,11 +21,11 @@
     flex-direction: row;
     align-items: flex-start;
 }
+/*right container*/
 .NavContain1{
     height: 70px;
     width: 50%;
     background-color: #D0B8AC;
-    box-shadow: 0px 4px 0px 0px rgba(119, 81, 68, 0.25);
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -25,59 +34,43 @@
 /* top right bottom left padding */
 
 /*hamburger icon*/
-#HamButton {
-    transform: translatey(17px);
+.HamButton {
+    transform: translatey(20px);
     flex-shrink: 0;
-    margin-left: 5px;
+    margin-left: 10px;
     border: 0px;
     background-color: transparent;
     display: flex;
     justify-content: center;
+    overflow: hidden;
     
 }
-#HamButton > svg{
-    height: 30px;
-    width: 25px;
+.HamButton > svg{
+    height: 35px;
+    width: 30px;
     background-color: transparent;
     
 }
-
-#HamButton:hover + #aboutMe > svg{
-    visibility: visible;
-}
-
-#aboutMe, #proj, #contacts{
-    border: 0px;
+.navButton{
     background-color: transparent;
-    transform: translatey(15px);
+    margin-left: 30px;
+    transform: translatey(1px);
 }
 
-#aboutMe > svg{
-    visibility: hidden;
-    transition: visibility 0.3s ease;
+.navButton > button > svg{
+    background-color: transparent;
+    margin-right: 20px;
     height: 30px;
-    width: 25px;
-    background-color: transparent;
+    width: 30px;
 }
-
-#proj > svg{
-    visibility: hidden;
-    height: 30px;
-    width: 25px;
-    background-color: transparent;
-}
-#contacts > svg {
-    visibility: hidden;
-    height: 30px;
-    width: 25px;
-    background-color: transparent;
+.aboutMe, .proj, .contacts{
+    @apply hover:bg-black hover:rounded-full
 }
 
 
-#aboutMe:hover, #proj:hover, #contacts:hover{
-    background-color: black;
-    
-}
+
+
+
 
 
 
