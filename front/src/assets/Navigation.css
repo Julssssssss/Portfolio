@@ -18,15 +18,15 @@
     background-color: #D0B8AC;
     box-shadow: 0px 4px 0px 0px rgba(119, 81, 68, 0.25);
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
    
 }
 /* top right bottom left padding */
 
 /*hamburger icon*/
 #HamButton {
-    transform: translatey(15px);
+    transform: translatey(17px);
     flex-shrink: 0;
     margin-left: 5px;
     border: 0px;
@@ -35,16 +35,53 @@
     justify-content: center;
     
 }
-#HamButton> svg:hover{
-    
-    
-}
 #HamButton > svg{
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 25px;
     background-color: transparent;
     
 }
+
+#HamButton:hover + #aboutMe > svg{
+    visibility: visible;
+}
+
+#aboutMe, #proj, #contacts{
+    border: 0px;
+    background-color: transparent;
+    transform: translatey(15px);
+}
+
+#aboutMe > svg{
+    visibility: hidden;
+    transition: visibility 0.3s ease;
+    height: 30px;
+    width: 25px;
+    background-color: transparent;
+}
+
+#proj > svg{
+    visibility: hidden;
+    height: 30px;
+    width: 25px;
+    background-color: transparent;
+}
+#contacts > svg {
+    visibility: hidden;
+    height: 30px;
+    width: 25px;
+    background-color: transparent;
+}
+
+
+#aboutMe:hover, #proj:hover, #contacts:hover{
+    background-color: black;
+    
+}
+
+
+
+
 /*for darkmode*/
 .circle{
     width: 40px;
