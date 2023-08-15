@@ -21,9 +21,6 @@ const App = () => {
      
         <NavBar/>
         <AboutMe/>
-  
-       
- 
       
     </div>
     </>

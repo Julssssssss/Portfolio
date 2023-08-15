@@ -74,16 +74,18 @@
 
 
 
-
 /*for darkmode*/
-.circle{
-    width: 40px;
-    height: 40px;
-    flex-shrink: 0;
-    margin-right: 10px;
-    background-color: transparent;
-    transform: translatey(15px);
-    border-radius: 50%;
-    background-color: black;
+
+.mode{
+    @apply bg-transparent mr-3 mt-3 rounded-full w-auto h-auto
 
 }
+
+.circle{
+    @apply pt-1.5 pl-1 hover:bg-black
+}
+
+
+input[type="checkbox"] {
+    display: none;
+  }

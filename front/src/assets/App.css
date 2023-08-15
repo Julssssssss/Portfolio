@@ -1,42 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 
 *{
     overflow-x: hidden;
     margin: 0;
     padding: 0%;
+    background-color: #EDDCD2;
 }
 /* about me css*/
 
 .parent{
-    @apply h-screen w-screen bg-amber-200;
+    @apply h-screen w-screen bg-[#EDDCD2] gap-2;
     display: flex;
     flex-direction: column;
+    
 
 }
 .intPic{
-    @apply h-screen w-screen mt-10 border-4 border-black;
+    @apply h-auto w-screen mt-10 border-2 border-black;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
 .intro{
-    background-color: brown;
-    width: 620px;
-    height: 417px;
+    width: 550px;
+    height: 380px;
     padding: 20px;
-    @apply rounded-xl;
+    box-shadow: 0px 4px 4px 0px rgba(119, 81, 68, 0.25);
+    font-family: 'Space Grotesk', sans-serif;
+    @apply rounded-xl text-xl text-center bg-[#d5bdaf];
 
 }
 .pic{
     width: 250px;
     height: 250px;
+    filter: drop-shadow(4px 4px 10px rgba(119, 81, 68, 0.25));
     transform: translateX(-30px);
-    @apply rounded-full bg-black;
+    @apply rounded-full bg-[#F2DFD7];
 }
+
+.rtu{
+    @apply flex flex-row place-content-center w-screen h-auto border-2 border-black gap-x-8
+}
+.about{
+    @apply bg-[#D0B8AC] text-center w-96 h-48 basis-1/2
+
+}
+.logo{
+    @apply bg-black rounded-full w-10 h-10
+}
+
+
 
    
 
