@@ -9,7 +9,7 @@ const AboutMe = () => {
               <div className="intro">
                 Hey there, I'm Julianna Abuyan Gillo, a 4th-year college student venturing into the world of web design.
               </div>
-              <div className="pic">
+              <div className="pic dark:bg-black">
                 hi
               </div>
         </div>

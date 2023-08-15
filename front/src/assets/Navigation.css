@@ -64,7 +64,7 @@
     width: 30px;
 }
 .aboutMe, .proj, .contacts{
-    @apply hover:bg-black hover:rounded-full
+    @apply hover:bg-black hover:rounded-full 
 }
 
 
@@ -77,7 +77,7 @@
 /*for darkmode*/
 
 .mode{
-    @apply bg-transparent mr-3 mt-3 rounded-full w-auto h-auto
+    @apply bg-transparent mr-3 mt-3 rounded-full w-auto h-auto 
 
 }
 
