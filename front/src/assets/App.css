@@ -14,14 +14,14 @@
 /* about me css*/
 
 .parent{
-    @apply h-screen w-screen bg-[#EDDCD2] gap-2;
+    @apply h-auto w-screen bg-[#EDDCD2] gap-4;
     display: flex;
     flex-direction: column;
     
 
 }
 .intPic{
-    @apply h-auto w-screen mt-10 border-2 border-black;
+    @apply h-auto w-screen mt-10 border-2 border-black pb-10;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -30,10 +30,9 @@
 .intro{
     width: 550px;
     height: 380px;
-    padding: 20px;
     box-shadow: 0px 4px 4px 0px rgba(119, 81, 68, 0.25);
     font-family: 'Space Grotesk', sans-serif;
-    @apply rounded-xl text-xl text-center bg-[#d5bdaf];
+    @apply rounded-xl text-xl text-center bg-[#d5bdaf] font-semibold p-10
 
 }
 .pic{
@@ -45,19 +44,27 @@
 }
 
 .rtu{
-    @apply flex flex-row place-content-center w-screen h-auto border-2 border-black gap-x-8
+    @apply flex flex-row place-content-center w-screen h-auto border-2 border-black gap-x-16
 }
 .about{
-    @apply bg-[#D0B8AC] text-center w-96 h-48 basis-1/2
+    @apply bg-[#D0B8AC] text-center w-96 h-48 basis-1/2 shadow-xl shadow-[#580C1F]
 
 }
 .logo{
-    @apply bg-black rounded-full w-10 h-10
+    @apply bg-[#D0B8AC] rounded-full w-44 h-44 mt-2 dark:bg-black shadow-lg shadow-[#580C1F] z-10
+}
+
+.au{
+    @apply flex flex-row place-content-center w-screen h-auto border-2 border-black gap-x-16 
 }
 
 
-
    
-
+.decor{
+    @apply flex flex-col
+}
+.decora{
+    @apply bg-black w-10 h-10 self-center
+}
 
 
