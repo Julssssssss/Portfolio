@@ -1,13 +1,20 @@
 {
-    "introduction":{
+    
+  "introduction":{
         "id": "1",
         "name": " Hey there, I'm Julianna Abuyan Gillo, a 4th-year college student venturing into the world of web design.",
-        "age": "18"
+        "profile": "hello"
 
     },
     "eme":{
         "id": "2",
         "name": "Gillo",
+        "age": "20"
+
+    },
+    "emeulit":{
+        "id": "2",
+        "name": "Julianna",
         "age": "20"
 
     }

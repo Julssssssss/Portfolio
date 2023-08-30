@@ -43,6 +43,11 @@
     @apply rounded-full bg-[#F2DFD7];
 }
 
+.Picture{
+    width: 250px;
+    height: 250px;
+    @apply object-contain p-2
+}
 .rtu{
     @apply flex flex-row place-content-center w-screen h-auto border-2 border-black gap-x-16
 }

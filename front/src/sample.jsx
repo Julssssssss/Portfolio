@@ -1,19 +1,32 @@
-import React from 'react'
+import axios from "axios";
+import { useState, useEffect } from "react";
 
-const sample = () => {
+const Sample = ({data}) => {
+  
+
   return (
     <>
-        <div>
-            <h1>Hello</h1>
-            <form action='/comment' method='post'>
-                <input type='text' name='name' id='name'/>
-                <input type='text' name='age' id='age'/>
-                <button>submit</button>
-            </form>
+    <div>
+      {data.map((datas) =>{
+      return(
+        
+        Object.values(datas).slice(1).map((el) =>(
+          <div key={el.id}>
+            <h1>{el.name}</h1>
 
+          </div>
+          
+          
+          ))
+      
+      )})}
+      {data.map((info)=>(
+        <div key={info.eme.id}>
+          <div>{info.eme.age}</div>
         </div>
+        ))}
+    </div>
     </>
-  )
-}
-
-export default sample
+  );
+};
+export default Sample;
